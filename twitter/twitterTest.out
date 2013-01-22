@@ -1,0 +1,17 @@
+Script started on Tue Jan 22 14:59:47 2013
+[?1034hbash-3.2$ /Users/hawk/Desktop/NewNewServer/start.command ; exit;[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjac[Kva Twitter
+Valid tweets:
+Tue Jan 22 15:00:09 EST 2013, This is valid test tweet #1.
+Tue Jan 22 15:00:09 EST 2013, This is valid test tweet #2.
+Tue Jan 22 15:00:09 EST 2013, This is valid test tweet #3.
+Tue Jan 22 15:00:09 EST 2013, This is valid test tweet #4.
+Tue Jan 22 15:00:09 EST 2013, This test tweet contains hashes and at signs, since they are common on twitter: ###@@@#@#.
+
+Invalid tweets:
+This is the first invalid test tweet. ************************************************************************************************************************************************************************************
+This is the second invalid test tweet. ************************************************************************************************************************************************************************************
+
+bash-3.2$ exit
+exit
+
+Script done on Tue Jan 22 15:00:12 2013

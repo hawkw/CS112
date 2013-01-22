@@ -14,8 +14,8 @@ import java.io.FileNotFoundException;
 public class Twitter {	
 	public static void main(String[] argv) {
 		
-		ArrayList<Tweet> validTweets = new ArrayList<Tweet>();		// stores all valid tweets
-		ArrayList<String> invalidTweets = new ArrayList<String>();  // stores all invalid tweets
+		ArrayList<Tweet> validTweets = new ArrayList<Tweet>(0);		// stores all valid tweets
+		ArrayList<String> invalidTweets = new ArrayList<String>(0);  // stores all invalid tweets
 		
 		File tweets;	// represents the tweets.txt file to be read from	
 		Scanner scan;	// scanner to read tweets from tweets.txt
@@ -27,7 +27,7 @@ public class Twitter {
 		
 		// setup LJV default context
 		LJV.Context def = LJV.getDefaultContext( );
-		    def.outputFormat = "png";
+		    def.outputFormat = "ps";
 		    def.treatAsPrimitive( String.class );
 			def.ignorePrivateFields = false;
 		
@@ -69,6 +69,6 @@ public class Twitter {
 		System.out.print("\n");
 		
 		// create LJV graph
-		LJV.drawGraph (new Object[] {invalidTweets, validTweets});
+		LJV.drawGraph (def, new Object[] {invalidTweets, validTweets});
 	}
 }
