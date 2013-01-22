@@ -5,7 +5,6 @@
 *
 * Represents a tweet for use in a Twitter client, with a date created,
 * message, and a method to test the tweet's validity.
-* 
 */
 	
 import java.util.Date;	 

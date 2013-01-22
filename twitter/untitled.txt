@@ -1,0 +1,10 @@
+	 +==============+
+	 | JAVA CLASS   |
+	 +--------------+
+	 | Constructor  |           
+	 +--------------+
+	 | Methods      |   /------> Instance variables
+	 +--------------+  /
+	 | Variables    | {
+	 +==============+  \
+	                    \-----> Static variables

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.io.File;
 import java.io.FileNotFoundException;
 	
-public class twitter {	
+public class Twitter {	
 	public static void main(String[] argv) {
 		
 		ArrayList<Tweet> validTweets = new ArrayList<Tweet>();		// stores all valid tweets
@@ -24,6 +24,12 @@ public class twitter {
 		final int MIN_LENGTH = 1;		// minimum length for a valid tweet
 		
 		String currentLine = new String();	// holds the string being sorted
+		
+		// setup LJV default context
+		LJV.Context def = LJV.getDefaultContext( );
+		    def.outputFormat = "png";
+		    def.treatAsPrimitive( String.class );
+			def.ignorePrivateFields = false;
 		
 		// try to set up the scanner
 		try {
@@ -47,7 +53,7 @@ public class twitter {
 			
 		// handle any thrown exceptions by printing the stack trace
 		catch (FileNotFoundException e){
-			e.printStackTrace(System.out);
+			e.printStackTrace(System.err);
 		} 
 		
 		// print out the valid tweets
@@ -61,5 +67,8 @@ public class twitter {
 		for (String invalidTweet : invalidTweets)
 			System.out.println(invalidTweet);
 		System.out.print("\n");
+		
+		// create LJV graph
+		LJV.drawGraph (new Object[] {invalidTweets, validTweets});
 	}
 }
