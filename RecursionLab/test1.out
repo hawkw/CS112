@@ -1,0 +1,18 @@
+Script started on Tue Jan 29 16:03:49 2013
+[?1034hbash-3.2$ java UseFibonacci.[K 40 all lomng[K[K[Kng
+Begin experiment with different Fibonacci implementations ...
+
+(Recursive/long) The 40th Fibonacci number = 102334155.
+(Iterative/long) The 40th Fibonacci number = 102334155.
+
+RecursiveFibonacciLong:
+  count = 1  total = 327 (ms)  average = 327.0 (ms)
+
+IterativeFibonacciLong:
+  count = 1  total = 0 (ms)  average = 0.0 (ms)
+
+... End experiment with different Fibonacci implementations
+bash-3.2$ exit
+exit
+
+Script done on Tue Jan 29 16:04:36 2013

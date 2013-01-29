@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+
+<project name="Profiler" default="default" basedir=".">
+
+<!-- 
+
+    Builds Profiler.
+
+-->
+
+
+	<!--
+	
+		Init
+	
+	-->
+	<target name="init"
+		description="Initializes the build properties">
+		
+		<tstamp/>
+		
+		<property file="${user.home}/build.properties" />
+		
+		<property name="Name"       value="Profiler"/>
+		<property name="name"       value="profiler"/>
+		<property name="version"	value="1.1"/>
+		<property name="packages"	value="com.clarkware"/>
+		
+		<property name="home"			value="${basedir}"/>
+		<property name="src.dir"		value="${home}/src"/>
+		<property name="tests.dir"		value="${home}/src/tests"/>
+		<property name="classes.dir"	value="${home}/classes"/>
+		<property name="lib.dir"		value="${home}/lib"/>
+		<property name="docs.dir"		value="${home}/docs"/>
+		<property name="javadocs.dir"	value="${home}/docs/api"/>
+		<property name="dist.dir"		value="${home}/dist/${name}"/>
+		
+		<!-- <property name="build.compiler" value="jikes"/> -->
+
+		<property name="main.test.case" 
+			value="com.clarkware.ProfilerTest" />
+		<available property="junit.present" 
+			classname="junit.framework.TestCase" />
+		
+		<property name="copyright"    	
+			value="Copyright &#169; 2001 Clarkware Consulting, Inc. All Rights Reserved."/>
+			
+	</target>
+	
+	<path id="project.classpath">
+		<pathelement path="${classpath}" />
+	</path>	
+
+
+	<!--
+	
+		Default
+	
+	-->
+	<target name="default" depends="compile,compile.tests"/>
+
+
+	<!--
+	
+		All
+	
+	-->
+	<target name="all" depends="clean,compile,compile.tests,test,doc"/>
+
+
+	<!--
+	
+		Rebuild
+	
+	-->
+	<target name="rebuild" depends="clean,compile"/>
+
+
+	<!--
+
+		Prepare
+
+	-->
+	<target name="prepare" depends="init"
+		description="Creates the directories">
+		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${lib.dir}"/>
+		<mkdir dir="${javadocs.dir}"/>
+	</target>
+
+
+	<!--
+
+		Compile Java Source
+
+	-->
+	<target name="compile" depends="prepare"
+		description="Compiles the Java source">
+
+		<javac srcdir="${src.dir}" destdir="${classes.dir}">
+			<classpath refid="project.classpath" />
+		</javac>
+
+	</target>
+
+	
+	<!--
+
+		Jar
+
+	-->
+	<target name="jar" depends="compile"
+		description="Creates the JAR file">
+
+		<jar jarfile="${lib.dir}/${name}.jar"
+			basedir="${classes.dir}" />
+
+	</target>
+  
+  
+	<!--
+
+		JavaDoc
+
+	-->
+	<target name="doc" depends="prepare"
+		description="Creates the API documentation">
+
+		<javadoc packagenames="${packages}"
+			sourcepath="${src.dir}"
+			destdir="${javadocs.dir}"
+			author="true"
+			version="true"
+			windowtitle="${Name} API"
+			doctitle="${Name} API"
+			bottom="${copyright}">
+		</javadoc>
+
+	</target>
+	
+	
+	<!--
+
+		Distribution
+
+	-->
+	<target name="dist" depends="clean,jar,doc" 
+		description="Creates the distribution">
+		
+		<mkdir dir="${dist.dir}" />
+		<mkdir dir="${dist.dir}/src" />
+		<mkdir dir="${dist.dir}/lib" />
+		<mkdir dir="${dist.dir}/docs" />
+		<mkdir dir="${dist.dir}/docs/api" />
+
+		<copy todir="${dist.dir}/src">
+			<fileset dir="${src.dir}" excludes="**/*.kpx" />
+		</copy>
+		
+		<copy todir="${dist.dir}/lib">
+			<fileset dir="${lib.dir}" />
+		</copy>
+
+		<copy file="build.xml" tofile="${dist.dir}/build.xml" />
+		
+		<copy todir="${dist.dir}/docs">
+			<fileset dir="${docs.dir}" />	
+		</copy>
+		
+		<copy todir="${dist.dir}/docs/api">
+			<fileset dir="${javadocs.dir}" />
+		</copy>
+		
+		<copy file="README" tofile="${dist.dir}/README" />
+		<copy file="LICENSE" tofile="${dist.dir}/LICENSE" />
+
+  </target>
+
+
+	<!--
+
+		Distribution (ZIP)
+
+	-->
+	<target name="dist-zip" depends="dist"
+		description="Creates the zip distribution">
+		
+		<zip zipfile="${name}${version}.zip" basedir="${home}/dist" includes="**" />
+	
+	</target>
+
+
+	<!--
+
+		Compile Test Cases
+
+	-->
+	<target name="compile.tests" depends="compile" if="junit.present"
+		description="Compiles the JUnit test cases">
+									
+		<javac srcdir="${tests.dir}" destdir="${classes.dir}">
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+		</javac> 
+	</target>
+
+
+	<!-- 
+		
+		Runs Test Cases 
+		
+	--> 
+	<target name="test" if="junit.present" depends="compile.tests" 
+		description="Runs the JUnit test cases"> 
+
+		<junit printsummary="no" haltonfailure="yes"> 
+			<classpath> 
+				<path refid="project.classpath" /> 
+				<pathelement path="${classes.dir}" /> 
+			</classpath> 
+			
+			<formatter type="plain" usefile="false" /> 
+
+			<test name="${main.test.case}" /> 
+		</junit> 
+
+	</target> 
+	
+
+	<!-- 
+		
+		Runs Test Case
+		
+	--> 
+	<target name="test.case" if="testcase" depends="compile.tests" 
+		description="Runs the specified JUnit test case"> 
+		
+		<junit printsummary="no" haltonfailure="yes"> 
+			<classpath> 
+				<path refid="project.classpath" /> 
+				<pathelement path="${classes.dir}" /> 
+			</classpath> 
+			
+			<formatter type="plain" usefile="false" /> 
+
+			<test name="${testcase}" /> 
+		</junit> 
+		
+	</target>
+
+
+	<!--
+
+		Clean	
+
+	-->
+	<target name="clean" depends="init"
+		description="Cleans the project">
+
+		<delete dir="${classes.dir}"/>
+		<delete dir="${javadocs.dir}"/>
+		<delete file="${lib.dir}/${name}.jar"/>
+		<delete dir="${home}/dist"/>
+		<delete dir="${dist.dir}"/>
+		<delete file="${name}${version}.zip"/>
+
+	</target>
+
+</project>
+
