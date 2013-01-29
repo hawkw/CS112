@@ -2,13 +2,16 @@
 * CalcAvg.java 
 * 
 * @author 	Hawk Weisman
-* @version	0.1
+* @version	0.2
 * 
 * Calculates the mean, median, and mode for a set of doubles.
 * The doubles are given as command-line arguments for the program.
 */
 	import java.lang.Math;
 	import java.util.Scanner;
+	
+	package CalcAvg;
+	
 	public class CalcAvg {
 		
 		/**
