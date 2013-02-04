@@ -16,7 +16,8 @@ public class ArrayExample
 
 	// can you modify the program so that it 
 	// accepts and prints out a command line argument?
-
+	double input = Double.parseDouble(args[0]);
+	System.out.println(input);
     }
 
 }

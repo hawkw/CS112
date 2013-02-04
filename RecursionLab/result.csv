@@ -1,0 +1,204 @@
+INPUT,ALGORITHM,TYPE,TIME(ms)
+  1, recursive , int ,     1.00
+  1, recursive , int ,     1.00
+  1, recursive , int ,     0.00
+  1, recursive , int ,     0.00
+  1, recursive , int ,     0.00
+  1, recursive ,long ,     1.00
+  1, recursive ,long ,     1.00
+  1, recursive ,long ,     0.00
+  1, recursive ,long ,     1.00
+  1, recursive ,long ,     0.00
+  1, iterative , int ,     1.00
+  1, iterative , int ,     0.00
+  1, iterative , int ,     1.00
+  1, iterative , int ,     1.00
+  1, iterative , int ,     1.00
+  1, iterative ,long ,     0.00
+  1, iterative ,long ,     0.00
+  1, iterative ,long ,     0.00
+  1, iterative ,long ,     0.00
+  1, iterative ,long ,     0.00
+  5, recursive , int ,     1.00
+  5, recursive , int ,     1.00
+  5, recursive , int ,     0.00
+  5, recursive , int ,     1.00
+  5, recursive , int ,     1.00
+  5, recursive ,long ,     0.00
+  5, recursive ,long ,     1.00
+  5, recursive ,long ,     1.00
+  5, recursive ,long ,     1.00
+  5, recursive ,long ,     1.00
+  5, iterative , int ,     0.00
+  5, iterative , int ,     1.00
+  5, iterative , int ,     0.00
+  5, iterative , int ,     0.00
+  5, iterative , int ,     1.00
+  5, iterative ,long ,     1.00
+  5, iterative ,long ,     0.00
+  5, iterative ,long ,     0.00
+  5, iterative ,long ,     0.00
+  5, iterative ,long ,     1.00
+ 10, recursive , int ,     0.00
+ 10, recursive , int ,     1.00
+ 10, recursive , int ,     0.00
+ 10, recursive , int ,     1.00
+ 10, recursive , int ,     1.00
+ 10, recursive ,long ,     0.00
+ 10, recursive ,long ,     1.00
+ 10, recursive ,long ,     1.00
+ 10, recursive ,long ,     0.00
+ 10, recursive ,long ,     1.00
+ 10, iterative , int ,     0.00
+ 10, iterative , int ,     1.00
+ 10, iterative , int ,     1.00
+ 10, iterative , int ,     0.00
+ 10, iterative , int ,     1.00
+ 10, iterative ,long ,     1.00
+INPUT,ALGORITHM,TYPE,TIME(ms)
+ 10, iterative ,long ,     0.00
+ 10, iterative ,long ,     0.00
+ 10, iterative ,long ,     1.00
+ 10, iterative ,long ,     0.00
+ 15, recursive , int ,     0.00
+ 15, recursive , int ,     0.00
+ 15, recursive , int ,     0.00
+ 15, recursive , int ,     0.00
+ 15, recursive , int ,     1.00
+ 15, recursive ,long ,     0.00
+ 15, recursive ,long ,     0.00
+ 15, recursive ,long ,     0.00
+ 15, recursive ,long ,     1.00
+ 15, recursive ,long ,     1.00
+ 15, iterative , int ,     0.00
+ 15, iterative , int ,     0.00
+ 15, iterative , int ,     0.00
+ 15, iterative , int ,     1.00
+ 15, iterative , int ,     0.00
+ 15, iterative ,long ,     0.00
+ 15, iterative ,long ,     1.00
+ 15, iterative ,long ,     1.00
+ 15, iterative ,long ,     1.00
+ 15, iterative ,long ,     1.00
+ 20, recursive , int ,     1.00
+ 20, recursive , int ,     2.00
+ 20, recursive , int ,     2.00
+ 20, recursive , int ,     1.00
+ 20, recursive , int ,     2.00
+ 20, recursive ,long ,     2.00
+ 20, recursive ,long ,     2.00
+ 20, recursive ,long ,     2.00
+ 20, recursive ,long ,     2.00
+ 20, recursive ,long ,     1.00
+ 20, iterative , int ,     1.00
+ 20, iterative , int ,     1.00
+ 20, iterative , int ,     1.00
+ 20, iterative , int ,     1.00
+ 20, iterative , int ,     1.00
+ 20, iterative ,long ,     1.00
+ 20, iterative ,long ,     0.00
+ 20, iterative ,long ,     0.00
+ 20, iterative ,long ,     0.00
+ 20, iterative ,long ,     0.00
+ 25, recursive , int ,     4.00
+ 25, recursive , int ,     3.00
+ 25, recursive , int ,     3.00
+ 25, recursive , int ,     3.00
+ 25, recursive , int ,     3.00
+ 25, recursive ,long ,     4.00
+ 25, recursive ,long ,     3.00
+ 25, recursive ,long ,     3.00
+ 25, recursive ,long ,     3.00
+ 25, recursive ,long ,     3.00
+ 25, iterative , int ,     1.00
+ 25, iterative , int ,     1.00
+INPUT,ALGORITHM,TYPE,TIME(ms)
+ 25, iterative , int ,     0.00
+ 25, iterative , int ,     0.00
+ 25, iterative , int ,     1.00
+ 25, iterative ,long ,     0.00
+ 25, iterative ,long ,     0.00
+ 25, iterative ,long ,     0.00
+ 25, iterative ,long ,     0.00
+ 25, iterative ,long ,     0.00
+ 30, recursive , int ,     5.00
+ 30, recursive , int ,     7.00
+ 30, recursive , int ,     6.00
+ 30, recursive , int ,     6.00
+ 30, recursive , int ,     5.00
+ 30, recursive ,long ,     7.00
+ 30, recursive ,long ,     7.00
+ 30, recursive ,long ,     6.00
+ 30, recursive ,long ,     7.00
+ 30, recursive ,long ,     6.00
+ 30, iterative , int ,     0.00
+ 30, iterative , int ,     0.00
+ 30, iterative , int ,     0.00
+ 30, iterative , int ,     1.00
+ 30, iterative , int ,     0.00
+ 30, iterative ,long ,     1.00
+ 30, iterative ,long ,     1.00
+ 30, iterative ,long ,     0.00
+ 30, iterative ,long ,     0.00
+ 30, iterative ,long ,     1.00
+ 35, recursive , int ,    35.00
+ 35, recursive , int ,    38.00
+ 35, recursive , int ,    34.00
+ 35, recursive , int ,    36.00
+ 35, recursive , int ,    36.00
+ 35, recursive ,long ,    35.00
+ 35, recursive ,long ,    34.00
+ 35, recursive ,long ,    35.00
+ 35, recursive ,long ,    34.00
+ 35, recursive ,long ,    36.00
+ 35, iterative , int ,     1.00
+ 35, iterative , int ,     1.00
+ 35, iterative , int ,     1.00
+ 35, iterative , int ,     1.00
+ 35, iterative , int ,     1.00
+ 35, iterative ,long ,     1.00
+ 35, iterative ,long ,     0.00
+ 35, iterative ,long ,     0.00
+ 35, iterative ,long ,     0.00
+ 35, iterative ,long ,     1.00
+ 40, recursive , int ,   372.00
+ 40, recursive , int ,   357.00
+ 40, recursive , int ,   347.00
+ 40, recursive , int ,   350.00
+ 40, recursive , int ,   347.00
+ 40, recursive ,long ,   321.00
+ 40, recursive ,long ,   320.00
+ 40, recursive ,long ,   322.00
+INPUT,ALGORITHM,TYPE,TIME(ms)
+ 40, recursive ,long ,   330.00
+ 40, recursive ,long ,   332.00
+ 40, iterative , int ,     0.00
+ 40, iterative , int ,     0.00
+ 40, iterative , int ,     0.00
+ 40, iterative , int ,     1.00
+ 40, iterative , int ,     1.00
+ 40, iterative ,long ,     0.00
+ 40, iterative ,long ,     0.00
+ 40, iterative ,long ,     0.00
+ 40, iterative ,long ,     0.00
+ 40, iterative ,long ,     0.00
+ 45, recursive , int ,  3824.00
+ 45, recursive , int ,  3820.00
+ 45, recursive , int ,  3821.00
+ 45, recursive , int ,  3820.00
+ 45, recursive , int ,  3828.00
+ 45, recursive ,long ,  3534.00
+ 45, recursive ,long ,  3527.00
+ 45, recursive ,long ,  3528.00
+ 45, recursive ,long ,  3555.00
+ 45, recursive ,long ,  3556.00
+ 45, iterative , int ,     0.00
+ 45, iterative , int ,     1.00
+ 45, iterative , int ,     0.00
+ 45, iterative , int ,     0.00
+ 45, iterative , int ,     1.00
+ 45, iterative ,long ,     1.00
+ 45, iterative ,long ,     1.00
+ 45, iterative ,long ,     1.00
+ 45, iterative ,long ,     1.00
+ 45, iterative ,long ,     0.00
