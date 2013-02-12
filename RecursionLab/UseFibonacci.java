@@ -1,3 +1,11 @@
+/**
+ * UseFibonacci.java
+ * @author Hawk Weisman
+ * Modified from a program by Professor Gregory Kapfhammer
+ *
+ * PLEDGE:
+ */
+
 import com.clarkware.Profiler;
 import java.io.*;
 
@@ -17,7 +25,7 @@ public class UseFibonacci
 	Integer Num = new Integer(args[0]);
 	int num = Num.intValue();
 	
-	// determine which algorithm and  we are supposed to benchmark
+	// determine which algorithm and data type we are supposed to benchmark
 	String chosenAlgorithm = args[1];
 	String chosenDataType = args[2];
 

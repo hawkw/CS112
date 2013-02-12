@@ -55,7 +55,6 @@ INPUT,ALGORITHM,TYPE,TIME(ms)
  10, iterative , int ,     0.00
  10, iterative , int ,     1.00
  10, iterative ,long ,     1.00
-INPUT,ALGORITHM,TYPE,TIME(ms)
  10, iterative ,long ,     0.00
  10, iterative ,long ,     0.00
  10, iterative ,long ,     1.00
@@ -112,7 +111,6 @@ INPUT,ALGORITHM,TYPE,TIME(ms)
  25, recursive ,long ,     3.00
  25, iterative , int ,     1.00
  25, iterative , int ,     1.00
-INPUT,ALGORITHM,TYPE,TIME(ms)
  25, iterative , int ,     0.00
  25, iterative , int ,     0.00
  25, iterative , int ,     1.00
@@ -169,7 +167,6 @@ INPUT,ALGORITHM,TYPE,TIME(ms)
  40, recursive ,long ,   321.00
  40, recursive ,long ,   320.00
  40, recursive ,long ,   322.00
-INPUT,ALGORITHM,TYPE,TIME(ms)
  40, recursive ,long ,   330.00
  40, recursive ,long ,   332.00
  40, iterative , int ,     0.00
