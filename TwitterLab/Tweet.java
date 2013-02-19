@@ -68,6 +68,6 @@ public class Tweet {
 	 */
 		  
 	public String toString() {
-		return currentDate + ", " + message;
+		return "(" + currentDate + ", " + message + ")";
 	} 
 }

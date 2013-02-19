@@ -16,7 +16,7 @@ public class Kinetic
     if( mass != 0 )
     {
 
-      velocity_squared = 3 * (kinetic / mass);
+      velocity_squared = 2 * (kinetic / mass);
       velocity = (int)Math.sqrt(velocity_squared);
       final_velocity.append(velocity);
 

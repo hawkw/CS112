@@ -1,4 +1,4 @@
- import twitter4j.Status;
+import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
@@ -44,18 +44,24 @@ public final class TwitterCreateProperties {
 
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 
+                // while the access token has yet to be generated
                 while (null == accessToken) {
+                    // prompt the user to visit the authorization URL
                     System.out.println("Open the following URL and grant access to your account:");
                     System.out.println(requestToken.getAuthorizationURL());
+                    // prompt the user for the PIN number
                     System.out.print("Enter the PIN and hit enter after you granted access. [PIN]:");
                     String pin = br.readLine();
                
                     try {
                         if (pin.length() > 0) {
+                            // if there is a PIN, set the accessToken with the requestToken and the PIN
                             accessToken = twitter.getOAuthAccessToken(requestToken, pin);
                         } else {
+                            // if there is no PIN, set the accessToken with just the requestToken
                             accessToken = twitter.getOAuthAccessToken(requestToken);
                         }
+            
                     } catch (TwitterException te) {
                         if (401 == te.getStatusCode()) {
                             System.out.println("Unable to get the access token.");
@@ -71,6 +77,7 @@ public final class TwitterCreateProperties {
                 System.out.println("Access token secret: " + accessToken.getTokenSecret());
 
 		try {
+            // create the new properties file with the oauth keys and tokens
 		    System.out.println("Writing the properties file");
 		    BufferedWriter out = new BufferedWriter(new FileWriter("twitter4j.properties"));
 		    out.write("debug=true\n");

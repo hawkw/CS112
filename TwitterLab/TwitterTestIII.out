@@ -1,0 +1,42 @@
+Script started on Tue Feb 19 12:44:15 2013
+[?1034hbash-3.2$ java TwitterClient @GregKapfhammer
+
+429:Returned in API v1.1 when a request cannot be served due to the application's rate limit having been exhausted for the resource. See Rate Limiting in API v1.1.(https://dev.twitter.com/docs/rate-limiting/1.1)
+message - Rate limit exceeded
+code - 88
+
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=6f0f59ca or
+	http://www.google.co.jp/search?q=20d0f73f
+TwitterException{exceptionCode=[6f0f59ca-20d0f73f], statusCode=429, message=Rate limit exceeded, code=88, retryAfter=-1, rateLimitStatus=RateLimitStatusJSONImpl{remaining=0, limit=15, resetTimeInSeconds=1361296430, secondsUntilReset=563}, version=3.0.3}
+	at twitter4j.internal.http.HttpClientImpl.request(HttpClientImpl.java:177)
+	at twitter4j.internal.http.HttpClientWrapper.request(HttpClientWrapper.java:61)
+	at twitter4j.internal.http.HttpClientWrapper.get(HttpClientWrapper.java:89)
+	at twitter4j.TwitterBaseImpl.fillInIDAndScreenName(TwitterBaseImpl.java:126)
+	at twitter4j.TwitterImpl.verifyCredentials(TwitterImpl.java:592)
+	at TwitterClient.main(TwitterClient.java:218)
+Failed to get user @GregKapfhammer: 429:Returned in API v1.1 when a request cannot be served due to the application's rate limit having been exhausted for the resource. See Rate Limiting in API v1.1.(https://dev.twitter.com/docs/rate-limiting/1.1)
+message - Rate limit exceeded
+code - 88
+
+bash-3.2$ java TwitterClient @GregKapfhammer
+
+429:Returned in API v1.1 when a request cannot be served due to the application's rate limit having been exhausted for the resource. See Rate Limiting in API v1.1.(https://dev.twitter.com/docs/rate-limiting/1.1)
+message - Rate limit exceeded
+code - 88
+
+Relevant discussions can be found on the Internet at:
+	http://www.google.co.jp/search?q=6f0f59ca or
+	http://www.google.co.jp/search?q=20d0f73f
+TwitterException{exceptionCode=[6f0f59ca-20d0f73f], statusCode=429, message=Rate limit exceeded, code=88, retryAfter=-1, rateLimitStatus=RateLimitStatusJSONImpl{remaining=0, limit=15, resetTimeInSeconds=1361296430, secondsUntilReset=558}, version=3.0.3}
+	at twitter4j.internal.http.HttpClientImpl.request(HttpClientImpl.java:177)
+	at twitter4j.internal.http.HttpClientWrapper.request(HttpClientWrapper.java:61)
+	at twitter4j.internal.http.HttpClientWrapper.get(HttpClientWrapper.java:89)
+	at twitter4j.TwitterBaseImpl.fillInIDAndScreenName(TwitterBaseImpl.java:126)
+	at twitter4j.TwitterImpl.verifyCredentials(TwitterImpl.java:592)
+	at TwitterClient.main(TwitterClient.java:218)
+Failed to get user @GregKapfhammer: 429:Returned in API v1.1 when a request cannot be served due to the application's rate limit having been exhausted for the resource. See Rate Limiting in API v1.1.(https://dev.twitter.com/docs/rate-limiting/1.1)
+message - Rate limit exceeded
+code - 88
+
+bash-3.2$ 
