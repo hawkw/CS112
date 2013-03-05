@@ -1,0 +1,101 @@
+Script started on Tue Feb 19 15:31:42 2013
+[?1034hbash-3.2$ java SortingExperiment.[K 4[K5
+Bubble Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 3 (ms)  average = 0.6 (ms)
+
+Selection Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+bash-3.2$ java SortingExperiment 5[K10
+Bubble Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Selection Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+bash-3.2$ java SortingExperiment 100
+Bubble Sort:
+  count = 5  total = 3 (ms)  average = 0.6 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 4 (ms)  average = 0.8 (ms)
+
+Selection Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Insertion Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+bash-3.2$ java SortingExperiment 1000
+Bubble Sort:
+  count = 5  total = 14 (ms)  average = 2.8 (ms)
+
+Merge Sort:
+  count = 5  total = 17 (ms)  average = 3.4 (ms)
+
+Quick Sort:
+  count = 5  total = 11 (ms)  average = 2.2 (ms)
+
+Selection Sort:
+  count = 5  total = 11 (ms)  average = 2.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 13 (ms)  average = 2.6 (ms)
+
+bash-3.2$ java SortingExperiment 10000
+Bubble Sort:
+  count = 5  total = 779 (ms)  average = 155.8 (ms)
+
+Merge Sort:
+  count = 5  total = 15 (ms)  average = 3.0 (ms)
+
+Quick Sort:
+  count = 5  total = 15 (ms)  average = 3.0 (ms)
+
+Selection Sort:
+  count = 5  total = 363 (ms)  average = 72.6 (ms)
+
+Insertion Sort:
+  count = 5  total = 154 (ms)  average = 30.8 (ms)
+
+bash-3.2$ java SortingExperiment 100000
+Bubble Sort:
+  count = 5  total = 80833 (ms)  average = 16166.6 (ms)
+
+Merge Sort:
+  count = 5  total = 107 (ms)  average = 21.4 (ms)
+
+Quick Sort:
+  count = 5  total = 75 (ms)  average = 15.0 (ms)
+
+Selection Sort:
+  count = 5  total = 32255 (ms)  average = 6451.0 (ms)
+
+Insertion Sort:
+  count = 5  total = 11629 (ms)  average = 2325.8 (ms)
+
+bash-3.2$ exit
+exit
+
+Script done on Tue Feb 19 15:35:30 2013

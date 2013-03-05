@@ -1,0 +1,113 @@
+java SortingExperiment 1
+Bubble Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Selection Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Insertion Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+bash-3.2$ java SortingExperiment 10
+Bubble Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 3 (ms)  average = 0.6 (ms)
+
+Selection Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+bash-3.2$ java SortingExperiment 10[K00
+Bubble Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Merge Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Quick Sort:
+  count = 5  total = 4 (ms)  average = 0.8 (ms)
+
+Selection Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+bash-3.2$ java SortingExperiment 1000
+Bubble Sort:
+  count = 5  total = 12 (ms)  average = 2.4 (ms)
+
+Merge Sort:
+  count = 5  total = 12 (ms)  average = 2.4 (ms)
+
+Quick Sort:
+  count = 5  total = 7 (ms)  average = 1.4 (ms)
+
+Selection Sort:
+  count = 5  total = 7 (ms)  average = 1.4 (ms)
+
+Insertion Sort:
+  count = 5  total = 8 (ms)  average = 1.6 (ms)
+
+bash-3.2$ java SortingExperiment 10000
+Bubble Sort:
+  count = 5  total = 767 (ms)  average = 153.4 (ms)
+
+Merge Sort:
+  count = 5  total = 41 (ms)  average = 8.2 (ms)
+
+Quick Sort:
+  count = 5  total = 19 (ms)  average = 3.8 (ms)
+
+Selection Sort:
+  count = 5  total = 330 (ms)  average = 66.0 (ms)
+
+Insertion Sort:
+  count = 5  total = 120 (ms)  average = 24.0 (ms)
+
+bash-3.2$ java SortingExperiment 10000
+Bubble Sort:
+  count = 5  total = 752 (ms)  average = 150.4 (ms)
+
+Merge Sort:
+  count = 5  total = 47 (ms)  average = 9.4 (ms)
+
+Quick Sort:
+  count = 5  total = 12 (ms)  average = 2.4 (ms)
+
+Selection Sort:
+  count = 5  total = 339 (ms)  average = 67.8 (ms)
+
+Insertion Sort:
+  count = 5  total = 122 (ms)  average = 24.4 (ms)
+
+bash-3.2$ java SortingExperiment 100000
+^[[A    Bubble Sort:
+  count = 5  total = 86034 (ms)  average = 17206.8 (ms)
+
+Merge Sort:
+  count = 5  total = 131 (ms)  average = 26.2 (ms)
+
+Quick Sort:
+  count = 5  total = 89 (ms)  average = 17.8 (ms)
+
+Selection Sort:
+  count = 5  total = 33937 (ms)  average = 6787.4 (ms)
+
+Insertion Sort:
+  count = 5  total = 13148 (ms)  average = 2629.6 (ms)
+
+bash-3.2$ java SortingExperiment 1000000

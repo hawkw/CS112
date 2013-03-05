@@ -15,12 +15,18 @@ public class SortingExperiment
   public static void main(String[] args)
   {
     
-    if(args.length >= 1 && args[0].equals("verbose"))
-    {
-      
-      verbose = true;
-      
-    }
+      for (String arg : args) {
+          
+            if(arg.equals("verbose"))
+            {
+                
+                verbose = true;
+                      
+            } else {
+                EXPERIMENT_SIZE = Integer.parseInt(arg);
+            }
+      }
+
     
     experimentBubbleSort(EXPERIMENT_SIZE);
     experimentSelectionSort(EXPERIMENT_SIZE);

@@ -1,0 +1,101 @@
+Script started on Sat Mar  2 14:22:31 2013
+[?1034hbash-3.2$ /Users/hawk/Desktop/NewNewServer/start.command; exit;[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjava SortingExperiment_mod 5 few-unique
+Bubble Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Merge Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Quick Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Selection Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Insertion Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+bash-3.2$ java SortingExperiment_mod 5 few-unique[1P few-unique1 few-unique0 few-unique
+Bubble Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Merge Sort:
+  count = 5  total = 0 (ms)  average = 0.0 (ms)
+
+Quick Sort:
+  count = 5  total = 3 (ms)  average = 0.6 (ms)
+
+Selection Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Insertion Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+bash-3.2$ java SortingExperiment_mod 10 few-unique0 few-unique
+Bubble Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Merge Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+Quick Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Selection Sort:
+  count = 5  total = 2 (ms)  average = 0.4 (ms)
+
+Insertion Sort:
+  count = 5  total = 1 (ms)  average = 0.2 (ms)
+
+bash-3.2$ java SortingExperiment_mod 100 few-unique0 few-unique
+Bubble Sort:
+  count = 5  total = 12 (ms)  average = 2.4 (ms)
+
+Merge Sort:
+  count = 5  total = 21 (ms)  average = 4.2 (ms)
+
+Quick Sort:
+  count = 5  total = 10 (ms)  average = 2.0 (ms)
+
+Selection Sort:
+  count = 5  total = 14 (ms)  average = 2.8 (ms)
+
+Insertion Sort:
+  count = 5  total = 10 (ms)  average = 2.0 (ms)
+
+bash-3.2$ java SortingExperiment_mod 1000 few-unique0 few-unique
+Bubble Sort:
+  count = 5  total = 721 (ms)  average = 144.2 (ms)
+
+Merge Sort:
+  count = 5  total = 53 (ms)  average = 10.6 (ms)
+
+Quick Sort:
+  count = 5  total = 15 (ms)  average = 3.0 (ms)
+
+Selection Sort:
+  count = 5  total = 368 (ms)  average = 73.6 (ms)
+
+Insertion Sort:
+  count = 5  total = 119 (ms)  average = 23.8 (ms)
+
+bash-3.2$ java SortingExperiment_mod 10000 few-unique[C[C[C0 few-unique
+Bubble Sort:
+  count = 5  total = 90400 (ms)  average = 18080.0 (ms)
+
+Merge Sort:
+  count = 5  total = 94 (ms)  average = 18.8 (ms)
+
+Quick Sort:
+  count = 5  total = 92 (ms)  average = 18.4 (ms)
+
+Selection Sort:
+  count = 5  total = 35103 (ms)  average = 7020.6 (ms)
+
+Insertion Sort:
+  count = 5  total = 10385 (ms)  average = 2077.0 (ms)
+
+bash-3.2$ exit
+exit
+
+Script done on Sat Mar  2 14:25:52 2013
