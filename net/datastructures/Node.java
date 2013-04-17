@@ -35,5 +35,6 @@ public class Node<E> {
   public void setNext(Node<E> newNext) {
     next = newNext; 
   }
+
 }
 //end#fragment Node

@@ -1,14 +1,9 @@
-/**
- * StackMachine.java
- * A simple stack-based arithmetic processor.
- *
- * @author Hawk Weisman
- * @see StackMachineInstruction
- * @see Stack
- * 
- * PLEDGE:
- */
+
+
 import java.util.EmptyStackException;
+
+import com.hawkw.Stack.Stack;
+
 
 public class StackMachine {
 	

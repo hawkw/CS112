@@ -12,6 +12,8 @@
  */
 import java.util.EmptyStackException;
 
+import com.hawkw.Stack.Stack;
+
 public class NodeStack<E> implements Stack<E> {
 	protected Node<E> topNode;	// the head node of the linked list
 	protected int size;			// number of elements in the stack

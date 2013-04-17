@@ -12,6 +12,8 @@
  */
 import java.util.EmptyStackException;
 
+import com.hawkw.Stack.Stack;
+
 public class ArrayStack<E> implements Stack<E> {
 	
 	protected int maxSize;						// actual capacity

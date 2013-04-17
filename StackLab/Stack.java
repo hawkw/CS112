@@ -1,16 +1,6 @@
-/**
- * Stack.java
- * Interface for the stack ADT to be implemented using both arrays and linked-lists.
- * Based on code by Michael Goodrich and Roberto Tamassia 
- * presented in "Data Structures & Algorithms in Java".
- *
- * @author Hawk Weisman
- * @see EmptyStackException
- * @see NodeStack
- * @see ArrayStack
- * 
- * PLEDGE:
- */
+
+
+import FullStackException;
 
 import java.util.EmptyStackException;
 

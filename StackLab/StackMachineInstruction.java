@@ -1,3 +1,6 @@
+import com.hawkw.Stack.Stack;
+import com.hawkw.Stack.StackMachine;
+
 /**
  * StackMachineInstruction.java
  * A generic instruction for an arithmetic stack machine.
